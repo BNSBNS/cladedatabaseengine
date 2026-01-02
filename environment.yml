@@ -1,0 +1,21 @@
+name: cladedatabaseengine
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - pandas>=2.0
+  - pytest>=7.0
+  - pytest-cov
+  - black
+  - mypy
+  - pylint
+  - pre-commit
+  - pyarrow>=12.0  # for columnar operations
+  - numba>=0.57    # JIT compilation for performance
+  - pip
+  - pip:
+    - typing-extensions
+    - structlog  # structured logging
+    - memory-profiler  # memory profiling
